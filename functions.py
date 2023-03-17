@@ -14,10 +14,3 @@ def soma(numA, numB):
 
 soma(2, 4)
 
-print('1.adição')
-print('2.subtração')
-print('3.multiplicação')
-print('4.divisão')
-
-
-first_number = input('Digite o primeiro valor')
