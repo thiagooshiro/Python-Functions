@@ -7,11 +7,19 @@
 
 # dividir = 4 // 2
 
-amigos = ['Bruna', 'Rodrigo', 'Giovana', 'Elisa']
+aniversariantes_do_mes = ['Bruna', 'Letícia']
 
+todos_amigos = {
+    "Amanda": { "aniversário": '22/02', "presente": 'Livros'},
+    "Bruna": {"aniversário": '18/03', "presente": 'Artesanato'},
+    "Pedro": {"aniversário": '20/09', "presente": 'Itens de esporte'},
+    "Letícia": {"aniversário": '02/03', "presente": 'Plantinhas'},
+}
+
+# a função deve imprimir nome da pessoa aniversariante: presente favorito;
 
 def lista_amigos():
-    print(amigos)
+    pass
 
 
 
@@ -31,3 +39,46 @@ def multiplicar(A, B):
 def dividir(A, B):
     div = A // B
     return div
+
+
+def menu():
+    print('Bem vindos à Calculadora!')
+    print('1. adição')
+    print('2. subtração')
+    print('3. multiplicação')
+    print('4. divisão')
+
+    escolha = int(input('Escolha sua operação (1, 2, 3, 4) '))
+    if not 1 <= escolha <= 4 :
+        print('Operação inválida')
+    else:
+        return escolha
+
+continua = True
+
+
+while continua:
+    
+    escolha = menu()
+    num_1 = int(input('Digite o primeiro número: '))
+    num_2 = int(input('Digite o segundo número: '))
+
+    if escolha == 1:
+        print(somar(num_1, num_2))
+    elif escolha == 2:
+        print(subtrair(num_1, num_2))
+    elif escolha == 3:
+        print(multiplicar(num_1, num_2))
+    elif escolha == 4:
+        print(dividir(num_1, num_2))
+    else:
+        print('Escolha uma operação através dos números')
+    
+    controle = int(input('Você deseja fazer outra conta? Sim(1), Não(2) '))
+    if controle == 2:
+        continua = False
+    elif controle == 1:
+        continua = True
+    else:
+        print('Escolha inválida')
+        break
