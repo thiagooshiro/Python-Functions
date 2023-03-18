@@ -1,15 +1,17 @@
 def add(a, b):
     return a + b
 
+
 def sub(a, b):
-    return a -b
+    return a - b
+
 
 def multy(a, b):
     return a * b
 
+
 def division(a, b):
     return a / b
-
 
 
 print('Bem vindo à calculadora! Escolha a operação: ')
