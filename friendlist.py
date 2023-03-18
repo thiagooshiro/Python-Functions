@@ -10,9 +10,7 @@ todos_amigos = {
 
 
 def lista_amigos(lista, dictionary):
-    for name in lista:
-        if name in dictionary:
-            print(f"{name}: {dictionary[name]['presente']}")
+    ...
 
 lista_amigos(amigos_aniversariantes, todos_amigos)
 
